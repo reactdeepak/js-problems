@@ -1,0 +1,11 @@
+let a = [];
+let sum = 0;
+let size = parseInt(prompt("Enter size of the array"));
+for (let i = 0; i < size; i++) {
+  a[i] = parseInt(prompt("Enter element #" + (i + 1)));
+}
+
+function sumArray(sum, num) {
+  return sum + num;
+}
+console.log(a.reduce(sumArray));
